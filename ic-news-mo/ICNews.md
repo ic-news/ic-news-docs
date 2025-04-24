@@ -95,22 +95,6 @@ This document provides an overview of the API endpoints and functionalities of t
   - Parameters: `args: CanisterWsGetMessagesArguments`
   - Returns: `CanisterWsGetMessagesResult`
 
-## Internal Functions
-
-- **\_save_to_archive**: Periodically saves news to archive canisters if the buffer exceeds a threshold.
-- **\_deploy_archive_canister**: Deploys a new archive canister if needed.
-
-## System Functions
-
-- **preupgrade**: Saves the news buffer to a stable array before upgrade.
-- **postupgrade**: Restores the news buffer from the stable array after upgrade.
-
-## WebSocket Callbacks
-
-- **on_open**: Handles new WebSocket connections.
-- **on_message**: Processes incoming WebSocket messages.
-- **on_close**: Manages WebSocket connection closures.
-
 ## Request Examples with TypeScript
 
 Below are some examples of how to interact with the `IcNews` canister using TypeScript. These examples assume you are using the `@dfinity/agent` library to interact with the Internet Computer.
